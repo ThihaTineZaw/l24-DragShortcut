@@ -1,0 +1,81 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+}
+
+.box{
+   width: 400px;
+   position: relative;
+    user-select: none;
+
+
+}
+
+.header-box{
+   background-color: steelblue;
+    padding: 30px 20px;
+    width: 100px;
+    text-align: center;
+    margin-left: 38%;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: move;
+}
+
+
+div.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    height: 20px;
+    width: 50px;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%,-50%) scale(0);
+    border-radius: 15px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btns.show div.icon{
+    visibility: visible;
+    transform: translate(-35%,-50%) scale(1);
+    opacity: 1;
+
+}
+
+div.icon:nth-of-type(1){
+    background-color: blue;
+    top: -70%;
+    left: 50%;
+}
+div.icon:nth-of-type(2){
+    background-color: skyblue;
+    left: 10%;
+}
+
+div.icon:nth-of-type(3){
+    background-color: rgb(23, 224, 90);
+    left: 90%;
+
+}
+
+div.icon:nth-of-type(4){
+    background-color: rgba(209, 111, 18, 0.452);
+    top: 170%;
+}
+
+
